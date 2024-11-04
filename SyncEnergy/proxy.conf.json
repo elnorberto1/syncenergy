@@ -1,0 +1,8 @@
+{
+    "/": {
+      "target": "http://139.162.149.82:8000",
+      "secure": false,
+      "changeOrigin": false,
+      "logLevel": "debug"
+    }
+}
