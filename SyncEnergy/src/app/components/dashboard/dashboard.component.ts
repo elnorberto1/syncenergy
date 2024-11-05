@@ -10,7 +10,7 @@ import { CookieService } from 'ngx-cookie-service';
 export class DashboardComponent{
   hardwareInfo: any;
 
-  constructor(private http: HttpClient, private cookieService: CookieService){
+  constructor(private http: HttpClient){
 
   }
 
@@ -19,10 +19,7 @@ export class DashboardComponent{
   }
 
   getHardwareInfo(){
-    const userID = this.cookieService.get('id');
-    const token = this.cookieService.get('token');
-
-    console.log('id: ', userID);
-    console.log('token: ', token);
+    const userID = localStorage.getItem('id');
+    console.log('dashboard id: ', userID);
   }
 }
