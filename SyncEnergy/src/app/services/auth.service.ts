@@ -10,7 +10,7 @@ import { CookieService } from 'ngx-cookie-service';
 })
 
 export class AuthService implements HttpClientModule{
-  private loginURL = 'http://139.162.149.82:8000/login'; //139.162.149.82
+  private loginURL = 'https://139.162.149.82:8000/login'; //139.162.149.82
   private verifyTokenURL = 'http://139.162.149.82:8000/verify-token';
   //private secretHeaderKey = 'cfc72715ee99b6c45f0b80046c8f6b19c2a4b5cb1e8dd63e5d8fae4b5e513191';
   //HttpClient je spristupneny vramci služby AuthService
